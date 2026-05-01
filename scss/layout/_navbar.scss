@@ -1,0 +1,12 @@
+.navbar {
+  background: $color-principal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.navbar a {
+  color: $color-texto;
+  margin: 0 10px;
+}

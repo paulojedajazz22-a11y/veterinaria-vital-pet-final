@@ -1,0 +1,26 @@
+@import "base/variables";
+@import "base/reset";
+@import "layout/navbar";
+@import "layout/footer";
+
+/* global */
+body {
+  font-family: $fuente-principal;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 5px 0;
+  }
+}
