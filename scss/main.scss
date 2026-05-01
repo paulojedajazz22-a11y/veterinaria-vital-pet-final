@@ -1,6 +1,7 @@
 @import "base/variables";
 @import "base/reset";
 @import "layout/navbar";
+@import "layout/hero";
 @import "layout/footer";
 
 /* global */
@@ -12,7 +13,19 @@ a {
   text-decoration: none;
 }
 
-/* responsive */
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .hero-img {
+    width: 300px;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -21,6 +34,35 @@ a {
 
   .navbar a {
     display: block;
-    margin: 5px 0;
+    margin: 8px 0;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-img {
+    width: 250px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .hero-img {
+    width: 200px;
   }
 }
