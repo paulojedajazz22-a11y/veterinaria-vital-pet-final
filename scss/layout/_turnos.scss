@@ -1,0 +1,51 @@
+.turnos {
+  padding: 60px;
+}
+
+.turnos-contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.turnos-texto {
+  flex: 1;
+}
+
+.turnos-form {
+  flex: 1;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.turnos-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.turnos-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.btn {
+  background: $color-principal;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .turnos-contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+}

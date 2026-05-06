@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Turnos | Vital Pet</title>
   <link rel="stylesheet" href="../css/main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -18,17 +19,28 @@
   </nav>
 </header>
 
-<main>
-  <h2>Turnos</h2>
+<main class="turnos">
+  <div class="turnos-contenedor">
 
-  <form>
-    <input type="text" placeholder="Nombre">
-    <input type="text" placeholder="Mascota">
-    <input type="date">
-    <button>Enviar</button>
-  </form>
+    <div class="turnos-texto">
+      <h1>Turnos</h1>
+      <p>Reservá un turno para la atención de tu mascota de forma rápida y sencilla.</p>
+    </div>
+
+    <div class="turnos-form">
+      <form>
+        <input type="text" placeholder="Nombre">
+        <input type="text" placeholder="Mascota">
+        <input type="date">
+
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+
+  </div>
 </main>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 <footer class="footer">
   <p>© 2026 Vital Pet</p>
 </footer>

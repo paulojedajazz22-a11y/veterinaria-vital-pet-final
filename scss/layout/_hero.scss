@@ -4,9 +4,9 @@
   background-position: center;
   min-height: 90vh;
 
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+.hero {
+  @include flex-center;
+}
 
   padding: 0 80px;
   color: white;

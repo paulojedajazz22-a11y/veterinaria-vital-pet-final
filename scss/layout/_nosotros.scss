@@ -1,0 +1,34 @@
+.nosotros {
+  padding: 60px;
+}
+
+.nosotros-contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.nosotros-texto {
+  flex: 1;
+}
+
+.nosotros-texto h1 {
+  margin-bottom: 20px;
+}
+
+.nosotros-img {
+  flex: 1;
+}
+
+.nosotros-img img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+@media (max-width: 768px) {
+  .nosotros-contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+}
