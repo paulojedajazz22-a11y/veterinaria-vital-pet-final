@@ -4,16 +4,15 @@
   background-position: center;
   min-height: 90vh;
 
-.hero {
-  @include flex-center;
-}
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 
   padding: 0 80px;
   color: white;
   position: relative;
 }
 
-/* capa oscura para que se lea el texto */
 .hero::before {
   content: "";
   position: absolute;
@@ -40,10 +39,18 @@
   margin-bottom: 20px;
 }
 
-.btn {
-  background: $color-principal;
+a.btn-inicio {
+  background-color: #00bcd4;
   color: white;
   padding: 12px 25px;
   border-radius: 8px;
   display: inline-block;
+  text-decoration: none;
+  border: none;
+  font-weight: 500;
+}
+
+a.btn-inicio:hover {
+  background-color: #0097a7;
+  transition: 0.3s;
 }

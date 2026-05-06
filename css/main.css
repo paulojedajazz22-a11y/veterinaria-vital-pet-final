@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+/* GLOBAL */
+body {
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* NAVBAR */
 .navbar {
   background: #00bcd4;
   display: flex;
@@ -15,7 +25,6 @@
 .navbar a {
   color: #ffffff;
   margin: 0 10px;
-  text-decoration: none;
   transition: 0.3s;
 }
 
@@ -24,6 +33,7 @@
   transform: translateY(-2px);
 }
 
+/* HERO */
 .hero {
   background-image: url("../img/Gato-veterinaria.webp");
   background-size: cover;
@@ -37,14 +47,10 @@
   position: relative;
 }
 
-/* capa oscura para que se lea el texto */
 .hero::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background: rgba(0, 0, 0, 0.4);
 }
 
@@ -64,7 +70,8 @@
   margin-bottom: 20px;
 }
 
-.btn {
+/* BOTÓN (IMPORTANTE: NO USAMOS .btn) */
+.btn-inicio {
   background: #00bcd4;
   color: white;
   padding: 12px 25px;
@@ -72,6 +79,7 @@
   display: inline-block;
 }
 
+/* FOOTER */
 .footer {
   background: #00bcd4;
   color: #ffffff;
@@ -80,6 +88,7 @@
   margin-top: 50px;
 }
 
+/* SERVICIOS */
 .servicios {
   padding: 60px;
   text-align: center;
@@ -104,10 +113,7 @@
   transform: translateY(-5px);
 }
 
-.card h3 {
-  margin-bottom: 10px;
-}
-
+/* NOSOTROS */
 .nosotros {
   padding: 60px;
 }
@@ -134,15 +140,9 @@
 .nosotros-img img {
   width: 100%;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 768px) {
-  .nosotros-contenedor {
-    flex-direction: column;
-    text-align: center;
-  }
-}
+/* TURNOS */
 .turnos {
   padding: 60px;
 }
@@ -152,10 +152,6 @@
   align-items: center;
   justify-content: space-between;
   gap: 40px;
-}
-
-.turnos-texto {
-  flex: 1;
 }
 
 .turnos-form {
@@ -178,31 +174,6 @@
   border-radius: 6px;
 }
 
-.btn {
-  background: #00bcd4;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-/* responsive */
-@media (max-width: 768px) {
-  .turnos-contenedor {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-/* global */
-body {
-  font-family: Arial, sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
 /* RESPONSIVE */
 @media (max-width: 1024px) {
   .hero {
@@ -210,42 +181,42 @@ a {
     text-align: center;
     padding: 60px 20px;
   }
-  .hero-img {
-    width: 300px;
-  }
 }
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     text-align: center;
   }
+
   .navbar a {
     display: block;
     margin: 8px 0;
   }
+
   .hero {
     flex-direction: column;
     text-align: center;
     padding: 40px 20px;
   }
-  .hero-img {
-    width: 250px;
+
+  .servicios-grid {
+    grid-template-columns: 1fr;
   }
-  .btn {
-    width: 100%;
+
+  .turnos-contenedor {
+    flex-direction: column;
     text-align: center;
   }
 }
+
 @media (max-width: 480px) {
   h1 {
     font-size: 24px;
   }
+
   h2 {
     font-size: 20px;
   }
-  .hero-img {
-    width: 200px;
-  }
 }
-
 /*# sourceMappingURL=main.css.map */
